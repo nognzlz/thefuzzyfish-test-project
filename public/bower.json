@@ -1,0 +1,13 @@
+{
+  "name": "public",
+  "description": "project libraries",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": false,
+  "dependencies": {
+    "angular": "^1.5.6",
+    "angular-route": "^1.5.6",
+    "bootstrap": "^3.3.6"
+  }
+}

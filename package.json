@@ -1,0 +1,20 @@
+{
+  "name": "fuzzyfizz",
+  "version": "1.0.0",
+  "description": "This is a evaluation project for fuzzyfizz",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js" 
+  },
+  "keywords": [
+    "fuzzyfizz test project"
+  ],
+  "author": "Nicolas Gonzalez Parra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongodb": "^2.1.20",
+    "mongoose": "^4.4.19"
+  }
+}
