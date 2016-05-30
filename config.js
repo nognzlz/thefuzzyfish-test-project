@@ -1,5 +1,8 @@
 var config = {
-	MONGO_URL: "mongodb://104.196.98.121:27017/usersDB"
+	MONGO_URL: "mongodb://104.154.44.48:27017/usersDB",
+	env: {
+		PORT: 8080
+	}
 };
 
 
