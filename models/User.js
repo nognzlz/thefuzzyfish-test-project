@@ -8,7 +8,7 @@ var userSchema = mongoose.Schema({
 	name: String,
 	surname: String,
 	email: { type: String, set: toLower },
-	dni: { type: Number, required: true },
+	dni: { type: Number },
 	birthdate: String
 });
 

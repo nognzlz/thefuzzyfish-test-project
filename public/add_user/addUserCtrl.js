@@ -1,4 +1,4 @@
-app.controller('addUserCtrl', function($scope, $uibModalInstance, addUserService, crudService, users) {
+app.controller('addUserCtrl', function($scope, $uibModalInstance, crudService, users) {
 	$scope.userInput = {
 		name: "",
 		surname: "",
@@ -8,7 +8,7 @@ app.controller('addUserCtrl', function($scope, $uibModalInstance, addUserService
 	};
 
 	$scope.addUser = function() {
-		addUserService.createUser($scope.userInput).then(function successCallback(res) {
+		crudService.createUser($scope.userInput).then(function successCallback(res) {
 			users.push(res.data);
 			$scope.close();
 		}, function errorCallback(res) {
