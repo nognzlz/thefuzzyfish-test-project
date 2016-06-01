@@ -4,7 +4,7 @@ app.controller('editUserCtrl', function($scope, $uibModalInstance, crudService, 
 		surname: user.surname,
 		dni: user.dni,
 		email: user.email,
-		birthdate: user.birthdate
+		birthdate: new Date(user.birthdate)
 	};
 
 	$scope.updateUser = function() {

@@ -23,7 +23,7 @@ app.service('crudService', function($http) {
   			method: 'DELETE',
   			url: '/api/deleteUser',
   			data: {_id: user._id},
-  			headers: {"Content-Type": "application/json;charset=utf-8"}
+  			headers: {"Content-Type": "application/json"}
 		});
 	};
 

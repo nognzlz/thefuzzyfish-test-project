@@ -1,4 +1,7 @@
 app.controller('crudCtrl', function($scope, crudService, $uibModal) {
+	$scope.sortType = 'name'; 
+    $scope.sortReverse = false;
+
 	crudService.users.then(function successCallback(res) {
 		$scope.users = res.data;
 	});
@@ -36,6 +39,9 @@ app.controller('crudCtrl', function($scope, crudService, $uibModal) {
 		crudService.deleteUser(user).then(function successCallback(res) {
 			$scope.users = $scope.users.filter(function(el) {
 				return el._id !== res.data._id;
+			}, function errorCallback(res) {
+				console.log(user);
+				console.log("An error ocurred while deleting user");
 			});
 		});
 	};

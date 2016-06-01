@@ -9,7 +9,7 @@ var userSchema = mongoose.Schema({
 	surname: String,
 	email: { type: String, set: toLower },
 	dni: { type: Number },
-	birthdate: String
+	birthdate: { type: Date }
 });
 
 module.exports = mongoose.model('User', userSchema);
